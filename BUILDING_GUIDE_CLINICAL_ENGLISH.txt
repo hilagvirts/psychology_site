@@ -1,0 +1,490 @@
+═══════════════════════════════════════════════════════════════════════════
+    📄 מדריך בנייה מפורט - clinical-english.html
+    (המגמה לפסיכולוגיה קלינית באנגלית)
+═══════════════════════════════════════════════════════════════════════════
+
+🎯 מטרת העמוד:
+להציג באופן מפורט את המגמה הקלינית באנגלית - תכנית לימודים, דרישות קבלה, 
+פרקטיקום, תזה, קריירה ותהליך הגשת מועמדות. העמוד מיועד לדוברי אנגלית 
+ולסטודנטים המעוניינים בהכשרה קלינית בינלאומית.
+
+⚠️ שים לב: הדף באנגלית! כיוון: LTR (Left-to-Right)
+
+═══════════════════════════════════════════════════════════════════════════
+📐 מבנה העמוד
+═══════════════════════════════════════════════════════════════════════════
+
+1. כותרת עליונה (Header)
+2. כותרת דף (Page Header)
+3. תוכן ראשי:
+   ├─ תפריט צדדי שמאלי (Sidebar) - 5 מגמות
+   └─ תוכן מרכזי:
+       ├─ Program Overview
+       ├─ Program Structure
+       ├─ Admission Requirements
+       ├─ Who Should Apply
+       ├─ Curriculum
+       ├─ Practicum Training (24 months)
+       ├─ Thesis
+       ├─ Career Opportunities
+       ├─ Application Process
+       └─ Contact Information
+4. כותרת תחתונה (Footer)
+
+═══════════════════════════════════════════════════════════════════════════
+📝 תוכן מפורט - טקסט באנגלית
+═══════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 1. כותרת עליונה (Header)                                               │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Logo/Name:
+──────────
+    Ariel University
+    Department of Psychology
+
+Navigation:
+───────────
+    • Home
+    • Contact
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 2. כותרת דף (Page Header)                                              │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Main Title:
+───────────
+    Clinical Psychology Track (English)
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 3. תפריט צדדי (Sidebar) - שמאלי!                                       │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Title:
+──────
+    Study Programs
+
+List (with links):
+──────────────────
+    • Clinical Track (English) → clinical-english.html
+    • Organizational Psychology → organizational.html
+    • Rehabilitation - Adults → rehabilitation-adults.html
+    • Rehabilitation - Children → rehabilitation-children.html
+    • Brain Sciences & Cognition → neuroscience.html
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 4. Program Overview                                                     │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Title:
+──────
+    About the Program
+
+Text:
+─────
+"The Clinical Psychology Master's program at Ariel University offers 
+comprehensive professional training in the practitioner-researcher model. 
+The program is taught entirely in English and is designed for English-
+speaking immigrants seeking to integrate into Israel's mental health system, 
+as well as Israeli students with high-level English proficiency who are 
+interested in international training.
+
+The program meets all requirements of the Council of Psychologists and the 
+Ministry of Health for professional recognition in Israel and facilitates 
+international recognition. Our faculty consists of experienced clinicians 
+and researchers, and students receive personalized mentorship throughout 
+their studies."
+
+Track Director:
+───────────────
+    Dr. Avidan Milevsky
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 5. Program Structure                                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Title:
+──────
+    Program Structure
+
+Text:
+─────
+"Duration: 2 years (4 semesters)
+
+The program includes:
+• 16 required courses
+• 5 elective courses
+• 24-month practicum (concurrent with coursework)
+• Master's thesis
+• Total: 40 credits
+
+Classes are scheduled on one day per week, making the program suitable for 
+working professionals. The practicum begins in the second semester and 
+continues throughout the program, providing extensive hands-on clinical 
+experience."
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 6. Admission Requirements                                               │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Title:
+──────
+    Admission Requirements
+
+Text (use bullet points):
+─────────────────────────
+Basic Requirements:
+• Bachelor's degree in Psychology from a recognized institution
+• Minimum GPA: [להשלים] (typically 80/100 or equivalent)
+• GRE scores (if applicable)
+• English proficiency: Native speaker or equivalent level
+• Hebrew proficiency: Basic level required for practicum sites
+
+Additional Requirements:
+• Two letters of recommendation from academic or professional references
+• Personal interview with the track director
+• Statement of purpose
+• CV/Resume
+
+Special Note:
+"Students who completed their bachelor's degree in a language other than 
+Hebrew will be required to demonstrate basic Hebrew proficiency for clinical 
+practicum settings."
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 7. Who Should Apply                                                     │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Title:
+──────
+    Who Should Apply
+
+Text:
+─────
+"This program is ideal for:
+
+• English-speaking immigrants (Olim) with psychology backgrounds seeking 
+  professional licensure in Israel
+• Israeli students with excellent English who want international training
+• Students planning to pursue doctoral studies in English-speaking countries
+• Mental health professionals seeking advanced clinical training
+• Individuals interested in working with English-speaking populations in 
+  Israel
+
+The English-language training provides graduates with flexibility to work 
+internationally while being licensed to practice in Israel."
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 8. Curriculum                                                           │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Title:
+──────
+    Curriculum
+
+Text:
+─────
+"The curriculum integrates theoretical knowledge with practical clinical 
+skills:
+
+Core Courses Include:
+• Advanced Psychopathology
+• Clinical Assessment and Diagnosis
+• Evidence-Based Psychotherapy
+• Cognitive-Behavioral Therapy (CBT)
+• Psychodynamic Psychotherapy
+• Child and Adolescent Psychology
+• Neuropsychology
+• Research Methods in Clinical Psychology
+• Ethics and Professional Practice
+• Group Therapy
+• Family Therapy
+
+Elective Courses:
+Students choose from specialized topics such as trauma psychology, addiction, 
+eating disorders, mindfulness-based interventions, and more.
+
+All courses are taught in English by experienced clinicians and researchers."
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 9. Practicum Training                                                   │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Title:
+──────
+    Practicum Training (24 Months)
+
+Text:
+─────
+"The practicum is a central component of the program, providing students 
+with supervised clinical experience in real-world settings.
+
+Duration: 24 months (approximately 1,200 hours)
+
+Practicum Sites Include:
+• Psychiatric hospitals
+• Community mental health centers
+• University counseling centers
+• Private clinics
+• Rehabilitation facilities
+• Schools and educational settings
+
+Supervision:
+Students receive weekly individual and group supervision from licensed 
+clinical psychologists. Supervision focuses on case conceptualization, 
+treatment planning, therapeutic techniques, and professional development.
+
+Clinical Populations:
+Students gain experience working with diverse populations including children, 
+adolescents, adults, and families, across a range of presenting problems.
+
+Note: Some practicum sites may require Hebrew proficiency for documentation 
+and team communication, though therapy sessions can be conducted in English."
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 10. Thesis                                                              │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Title:
+──────
+    Master's Thesis
+
+Text:
+─────
+"All students complete an original research thesis under the guidance of a 
+faculty advisor.
+
+Timeline:
+• Year 1: Research proposal development and submission
+• Year 2: Data collection, analysis, and thesis writing
+
+The thesis process includes:
+• Literature review
+• Research design and methodology
+• Data collection and analysis
+• Written thesis (in English)
+• Oral defense before a committee
+
+Topics can range from clinical interventions and assessment methods to 
+psychopathology and treatment outcomes. Students are encouraged to choose 
+topics aligned with their clinical interests and career goals.
+
+The thesis provides valuable research experience for those planning to 
+pursue doctoral studies or careers in academic/research settings."
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 11. Career Opportunities                                                │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Title:
+──────
+    Career Opportunities
+
+Text:
+─────
+"Graduates of the Clinical Psychology program are qualified for diverse 
+professional roles:
+
+Clinical Practice:
+• Licensed clinical psychologist in Israel (after completing licensing 
+  requirements)
+• Private practice
+• Hospital-based psychology
+• Community mental health centers
+• School psychology
+• Organizational consulting
+
+Research and Academia:
+• Research positions in universities and medical centers
+• Doctoral studies in clinical psychology
+• Academic teaching positions
+
+International Opportunities:
+• The English-language training facilitates professional mobility
+• Graduates can pursue licensure processes in English-speaking countries
+• Opportunities in international mental health organizations
+
+The program's emphasis on both clinical skills and research prepares 
+graduates for leadership roles in mental health care and research."
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 12. Application Process                                                 │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Title:
+──────
+    Application Process
+
+Text:
+─────
+"How to Apply:
+
+1. Submit Online Application
+   Complete the application form on the university website
+
+2. Required Documents:
+   • Official transcripts from all universities attended
+   • Two letters of recommendation
+   • Statement of purpose (1-2 pages)
+   • CV/Resume
+   • GRE scores (if required)
+   • English proficiency documentation
+   • Copy of passport/ID
+
+3. Application Review
+   Applications are reviewed by the admissions committee
+
+4. Interview
+   Shortlisted candidates are invited for a personal interview with the 
+   track director
+
+5. Admission Decision
+   Applicants are notified of admission decisions within 4-6 weeks
+
+Application Deadline:
+Applications are accepted once per year. Please check the department website 
+for current deadlines.
+
+Note: Space is limited. Early application is strongly recommended."
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 13. Contact Information                                                 │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Title:
+──────
+    Contact Information
+
+Text:
+─────
+"For more information about the Clinical Psychology program:
+
+Track Director:
+Dr. Avidan Milevsky
+Email: [להשלים]
+Office: [להשלים]
+
+Department Secretary:
+Phone: [להשלים]
+Email: [להשלים]
+
+Department of Psychology
+Ariel University
+P.O. Box 3, Ariel, Israel
+
+We welcome inquiries from prospective students and are happy to answer 
+questions about the program, admission requirements, and career opportunities."
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 14. כותרת תחתונה (Footer)                                              │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Column 1:
+─────────
+    Department of Psychology
+    Ariel University
+    P.O. Box 3, Ariel
+
+Column 2:
+─────────
+    Contact
+    Phone: [להשלים]
+    Email: [להשלים]
+
+Column 3:
+─────────
+    Links
+    • University Website
+    • Apply Now
+
+Bottom Line:
+────────────
+    © 2025 Ariel University. All rights reserved.
+
+
+═══════════════════════════════════════════════════════════════════════════
+🎨 הנחיות עיצוב ייחודיות לדף זה
+═══════════════════════════════════════════════════════════════════════════
+
+כיוון:
+──────
+    dir="ltr" על תג <html>
+    text-align: left
+    כל הטקסט יישר שמאל
+
+תפריט צדדי:
+────────────
+    מיקום: צד שמאל (left: 0)
+    ברוחב 250px
+    הפריט הנוכחי (Clinical Track) מודגש
+
+צבע גבול:
+──────────
+    צבע ייחודי למגמה: #17a2b8 (כחול-ירקרק)
+    שימוש בגבול עליון בכותרת הדף
+
+פונט:
+─────
+    Heebo תומך באנגלית מצוין
+    גודל: 17px
+    משקל: 400 (רגיל לאנגלית)
+
+רשימות:
+────────
+    bullet points (•) משמאל
+    הזחה מהשוליים השמאליים
+
+
+═══════════════════════════════════════════════════════════════════════════
+📱 רספונסיביות
+═══════════════════════════════════════════════════════════════════════════
+
+מובייל:
+────────
+    תפריט צדדי עובר למעלה
+    רוחב מלא
+    כל הטקסט נשאר LTR
+
+
+═══════════════════════════════════════════════════════════════════════════
+✅ רשימת בדיקה
+═══════════════════════════════════════════════════════════════════════════
+
+□ כל הטקסט באנגלית תקינה
+□ כיוון LTR עובד
+□ תפריט צדדי בצד שמאל
+□ קישור חזרה לדף הבית עובד
+□ קישורים למגמות אחרות עובדים
+□ אין שגיאות כתיב באנגלית
+□ המידע מדויק ומעודכן
+□ פרטי התקשרות [להשלים] מסומנים
+
+
+═══════════════════════════════════════════════════════════════════════════
+💡 טיפים
+═══════════════════════════════════════════════════════════════════════════
+
+• השתמש ב-Grammarly לבדיקת אנגלית
+• וודא שכל המונחים המקצועיים נכונים
+• הקפד על עקביות בסגנון הכתיבה
+• שמור על טון אקדמי ומקצועי
+• הוסף קישורים למסמכים רלוונטיים
+
+
+═══════════════════════════════════════════════════════════════════════════
+סיימת! דף המגמה הקלינית באנגלית מוכן! 🎉
+═══════════════════════════════════════════════════════════════════════════

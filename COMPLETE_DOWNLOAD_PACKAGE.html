@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📥 חבילת הורדה מלאה - אתר פסיכולוגיה אריאל</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #005596 0%, #003d6b 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 80px rgba(0,0,0,0.4);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #005596 0%, #003d6b 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 3rem;
+        }
+        
+        .alert {
+            background: #fff3cd;
+            border-right: 5px solid #ffc107;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .alert strong {
+            color: #856404;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .step-container {
+            margin-bottom: 3rem;
+        }
+        
+        .step-header {
+            background: #f8f9fa;
+            border-right: 5px solid #005596;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+        }
+        
+        .step-header h2 {
+            color: #005596;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .step-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .file-card {
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s;
+        }
+        
+        .file-card:hover {
+            border-color: #005596;
+            box-shadow: 0 4px 12px rgba(0,85,150,0.1);
+        }
+        
+        .file-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #dee2e6;
+        }
+        
+        .file-name {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .file-icon {
+            font-size: 2rem;
+        }
+        
+        .file-name h3 {
+            color: #005596;
+            font-size: 1.3rem;
+        }
+        
+        .file-size {
+            background: #005596;
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .file-instructions {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        .file-instructions ol {
+            margin-right: 1.5rem;
+        }
+        
+        .file-instructions li {
+            margin-bottom: 0.8rem;
+            color: #333;
+        }
+        
+        .file-path {
+            background: #2d2d2d;
+            color: #4af626;
+            padding: 0.8rem 1.2rem;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+            direction: ltr;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+        
+        .download-button {
+            background: #28a745;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .download-button:hover {
+            background: #218838;
+        }
+        
+        .folder-structure {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 2rem;
+            border-radius: 12px;
+            font-family: 'Courier New', monospace;
+            margin: 2rem 0;
+            direction: ltr;
+            text-align: left;
+            overflow-x: auto;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .success-box {
+            background: #d4edda;
+            border-right: 5px solid #28a745;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .success-box h3 {
+            color: #155724;
+            margin-bottom: 0.8rem;
+        }
+        
+        .success-box ul {
+            margin-right: 1.5rem;
+        }
+        
+        .success-box li {
+            color: #155724;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tip-box {
+            background: #d1ecf1;
+            border-right: 5px solid #17a2b8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .tip-box strong {
+            color: #0c5460;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+        
+        .final-structure {
+            background: #e7f3ff;
+            border: 3px solid #005596;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+        
+        .final-structure h3 {
+            color: #005596;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #d63384;
+            font-size: 0.95rem;
+        }
+        
+        .warning-box {
+            background: #f8d7da;
+            border-right: 5px solid #dc3545;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .warning-box strong {
+            color: #721c24;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .checklist {
+            background: white;
+            border: 2px solid #dee2e6;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .checklist li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .checklist li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📥 חבילת הורדה מלאה</h1>
+            <p>אתר תואר שני בפסיכולוגיה - אוניברסיטת אריאל</p>
+        </div>
+        
+        <div class="content">
+            
+            <div class="alert">
+                <strong>🎯 מה את הולכת להוריד?</strong>
+                אתר אינטרנט מלא ומוכן לשימוש עם 12 קבצים שעובדים יחד בצורה מושלמת. 
+                כל הקישורים בין הדפים יעבדו, כל התמונות יוצגו, והעיצוב יהיה זהה בדיוק לגרסה המקורית.
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">קבצים סה"כ</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">דפי HTML</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">תמונות</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">קובץ עיצוב CSS</div>
+                </div>
+            </div>
+
+            <!-- שלב 1 -->
+            <div class="step-container">
+                <div class="step-header">
+                    <h2>שלב 1️⃣: יצירת מבנה התיקיות</h2>
+                    <p>צרי את המבנה הבא על המחשב שלך</p>
+                </div>
+                
+                <div class="file-instructions">
+                    <ol>
+                        <li>פתחי את File Explorer (סייר הקבצים) במחשב</li>
+                        <li>נווטי למיקום נוח (למשל: <code>C:\Users\YourName\Desktop\</code>)</li>
+                        <li>צרי תיקייה חדשה בשם <strong>psychology-website</strong></li>
+                        <li>היכנסי לתוך התיקייה החדשה</li>
+                        <li>צרי בתוכה שתי תיקיות משנה:</li>
+                    </ol>
+                </div>
+                
+                <div class="file-path">
+                    📁 psychology-website/
+                    ├── 📁 css/
+                    └── 📁 images/
+                </div>
+                
+                <div class="tip-box">
+                    <strong>💡 חשוב!</strong>
+                    שמות התיקיות <code>css</code> ו-<code>images</code> חייבים להיות באותיות קטנות באנגלית בדיוק כפי שרשום. 
+                    אחרת הקישורים לא יעבדו!
+                </div>
+            </div>
+
+            <!-- שלב 2 -->
+            <div class="step-container">
+                <div class="step-header">
+                    <h2>שלב 2️⃣: הורדת קבצי HTML (6 קבצים)</h2>
+                    <p>קבצי הדפים הראשיים של האתר - שמרי אותם ישירות בתיקייה הראשית</p>
+                </div>
+                
+                <!-- index.html -->
+                <div class="file-card">
+                    <div class="file-header">
+                        <div class="file-name">
+                            <span class="file-icon">🏠</span>
+                            <h3>index.html</h3>
+                        </div>
+                        <span class="file-size">19 KB</span>
+                    </div>
+                    <div class="file-instructions">
+                        <p><strong>תיאור:</strong> עמוד הבית - הדף הראשון שנפתח כשמריצים את האתר</p>
+                        <p><strong>איך להוריד:</strong></p>
+                        <ol>
+                            <li>פתחי את הקובץ <code>index.html</code> בפלטפורמה</li>
+                            <li>בחרי את כל התוכן (Ctrl+A)</li>
+                            <li>העתיקי (Ctrl+C)</li>
+                            <li>פתחי Notepad/Notepad++ במחשב</li>
+                            <li>הדביקי את התוכן (Ctrl+V)</li>
+                            <li>שמרי בשם: <code>index.html</code> בתיקייה <code>psychology-website</code></li>
+                        </ol>
+                        <div class="file-path">📍 psychology-website/index.html</div>
+                    </div>
+                </div>
+
+                <!-- clinical-english.html -->
+                <div class="file-card">
+                    <div class="file-header">
+                        <div class="file-name">
+                            <span class="file-icon">📄</span>
+                            <h3>clinical-english.html</h3>
+                        </div>
+                        <span class="file-size">15 KB</span>
+                    </div>
+                    <div class="file-instructions">
+                        <p><strong>תיאור:</strong> דף המגמה הקלינית באנגלית</p>
+                        <p><strong>איך להוריד:</strong> אותו תהליך כמו index.html</p>
+                        <div class="file-path">📍 psychology-website/clinical-english.html</div>
+                    </div>
+                </div>
+
+                <!-- organizational.html -->
+                <div class="file-card">
+                    <div class="file-header">
+                        <div class="file-name">
+                            <span class="file-icon">📄</span>
+                            <h3>organizational.html</h3>
+                        </div>
+                        <span class="file-size">14 KB</span>
+                    </div>
+                    <div class="file-instructions">
+                        <p><strong>תיאור:</strong> דף המגמה הארגונית-תעסוקתית</p>
+                        <p><strong>איך להוריד:</strong> אותו תהליך כמו index.html</p>
+                        <div class="file-path">📍 psychology-website/organizational.html</div>
+                    </div>
+                </div>
+
+                <!-- rehabilitation-adults.html -->
+                <div class="file-card">
+                    <div class="file-header">
+                        <div class="file-name">
+                            <span class="file-icon">📄</span>
+                            <h3>rehabilitation-adults.html</h3>
+                        </div>
+                        <span class="file-size">18 KB</span>
+                    </div>
+                    <div class="file-instructions">
+                        <p><strong>תיאור:</strong> דף המגמה השיקומית - מסלול מבוגרים</p>
+                        <p><strong>איך להוריד:</strong> אותו תהליך כמו index.html</p>
+                        <div class="file-path">📍 psychology-website/rehabilitation-adults.html</div>
+                    </div>
+                </div>
+
+                <!-- rehabilitation-children.html -->
+                <div class="file-card">
+                    <div class="file-header">
+                        <div class="file-name">
+                            <span class="file-icon">📄</span>
+                            <h3>rehabilitation-children.html</h3>
+                        </div>
+                        <span class="file-size">17 KB</span>
+                    </div>
+                    <div class="file-instructions">
+                        <p><strong>תיאור:</strong> דף המגמה השיקומית - מסלול ילדים</p>
+                        <p><strong>איך להוריד:</strong> אותו תהליך כמו index.html</p>
+                        <div class="file-path">📍 psychology-website/rehabilitation-children.html</div>
+                    </div>
+                </div>
+
+                <!-- neuroscience.html -->
+                <div class="file-card">
+                    <div class="file-header">
+                        <div class="file-name">
+                            <span class="file-icon">📄</span>
+                            <h3>neuroscience.html</h3>
+                        </div>
+                        <span class="file-size">15 KB</span>
+                    </div>
+                    <div class="file-instructions">
+                        <p><strong>תיאור:</strong> דף מגמת מדעי המוח וקוגניציה</p>
+                        <p><strong>איך להוריד:</strong> אותו תהליך כמו index.html</p>
+                        <div class="file-path">📍 psychology-website/neuroscience.html</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- שלב 3 -->
+            <div class="step-container">
+                <div class="step-header">
+                    <h2>שלב 3️⃣: הורדת קובץ העיצוב CSS</h2>
+                    <p>הקובץ שאחראי על המראה והעיצוב של האתר</p>
+                </div>
+                
+                <div class="file-card">
+                    <div class="file-header">
+                        <div class="file-name">
+                            <span class="file-icon">🎨</span>
+                            <h3>style-sidebar.css</h3>
+                        </div>
+                        <span class="file-size">5 KB</span>
+                    </div>
+                    <div class="file-instructions">
+                        <p><strong>תיאור:</strong> קובץ העיצוב הראשי - צבעים, פונטים, פריסה</p>
+                        <p><strong>איך להוריד:</strong></p>
+                        <ol>
+                            <li>פתחי את <code>css/style-sidebar.css</code> בפלטפורמה</li>
+                            <li>בחרי את כל התוכן (Ctrl+A)</li>
+                            <li>העתיקי (Ctrl+C)</li>
+                            <li>פתחי Notepad במחשב</li>
+                            <li>הדביקי (Ctrl+V)</li>
+                            <li>שמרי בשם: <code>style-sidebar.css</code> <strong>בתוך תיקיית css</strong></li>
+                        </ol>
+                        <div class="file-path">📍 psychology-website/css/style-sidebar.css</div>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <strong>⚠️ זהירות!</strong>
+                    קובץ זה חייב להיות בתוך התיקייה <code>css</code> ולא בתיקייה הראשית!
+                </div>
+            </div>
+
+            <!-- שלב 4 -->
+            <div class="step-container">
+                <div class="step-header">
+                    <h2>שלב 4️⃣: הורדת התמונות (5 קבצים)</h2>
+                    <p>התמונות המקצועיות של כל מגמה</p>
+                </div>
+                
+                <div class="tip-box">
+                    <strong>💡 טיפ להורדת תמונות:</strong>
+                    תמונות הן קבצים בינאריים. אם הפלטפורמה מאפשרת, לחצי ימנית על התמונה ובחרי "Save Image As".
+                    אם לא, ייתכן שתצטרכי להעתיק את כתובת ה-URL של התמונה ולהוריד אותה דרך הדפדפן.
+                </div>
+
+                <!-- Clinical English Image -->
+                <div class="file-card">
+                    <div class="file-header">
+                        <div class="file-name">
+                            <span class="file-icon">🖼️</span>
+                            <h3>clinical-english-program.jpg</h3>
+                        </div>
+                        <span class="file-size">47 KB</span>
+                    </div>
+                    <div class="file-instructions">
+                        <p><strong>תיאור:</strong> תמונה למגמה הקלינית באנגלית</p>
+                        <div class="file-path">📍 psychology-website/images/clinical-english-program.jpg</div>
+                    </div>
+                </div>
+
+                <!-- Organizational Image -->
+                <div class="file-card">
+                    <div class="file-header">
+                        <div class="file-name">
+                            <span class="file-icon">🖼️</span>
+                            <h3>organizational-program.jpg</h3>
+                        </div>
+                        <span class="file-size">95 KB</span>
+                    </div>
+                    <div class="file-instructions">
+                        <p><strong>תיאור:</strong> תמונה למגמה הארגונית-תעסוקתית</p>
+                        <div class="file-path">📍 psychology-website/images/organizational-program.jpg</div>
+                    </div>
+                </div>
+
+                <!-- Rehabilitation Adults Image -->
+                <div class="file-card">
+                    <div class="file-header">
+                        <div class="file-name">
+                            <span class="file-icon">🖼️</span>
+                            <h3>rehabilitation-program.jpg</h3>
+                        </div>
+                        <span class="file-size">528 KB</span>
+                    </div>
+                    <div class="file-instructions">
+                        <p><strong>תיאור:</strong> תמונה למסלול השיקומי מבוגרים</p>
+                        <div class="file-path">📍 psychology-website/images/rehabilitation-program.jpg</div>
+                    </div>
+                </div>
+
+                <!-- Rehabilitation Children Image -->
+                <div class="file-card">
+                    <div class="file-header">
+                        <div class="file-name">
+                            <span class="file-icon">🖼️</span>
+                            <h3>rehabilitation-children-program.jpg</h3>
+                        </div>
+                        <span class="file-size">227 KB</span>
+                    </div>
+                    <div class="file-instructions">
+                        <p><strong>תיאור:</strong> תמונה למסלול השיקומי ילדים</p>
+                        <div class="file-path">📍 psychology-website/images/rehabilitation-children-program.jpg</div>
+                    </div>
+                </div>
+
+                <!-- Neuroscience Image -->
+                <div class="file-card">
+                    <div class="file-header">
+                        <div class="file-name">
+                            <span class="file-icon">🖼️</span>
+                            <h3>neuroscience-program.jpg</h3>
+                        </div>
+                        <span class="file-size">1.07 MB</span>
+                    </div>
+                    <div class="file-instructions">
+                        <p><strong>תיאור:</strong> תמונה למגמת מדעי המוח וקוגניציה</p>
+                        <div class="file-path">📍 psychology-website/images/neuroscience-program.jpg</div>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <strong>⚠️ חשוב מאוד!</strong>
+                    כל התמונות חייבות להיות בתוך התיקייה <code>images</code> עם השמות המדויקים (כולל סיומת .jpg)
+                </div>
+            </div>
+
+            <!-- שלב 5 -->
+            <div class="step-container">
+                <div class="step-header">
+                    <h2>שלב 5️⃣: וידוא המבנה הסופי</h2>
+                    <p>ודאי שכל הקבצים במקום הנכון</p>
+                </div>
+                
+                <div class="final-structure">
+                    <h3>🎯 כך צריך להיראות מבנה התיקיות שלך:</h3>
+                    
+                    <div class="folder-structure">
+📁 psychology-website/
+│
+├── 📄 index.html
+├── 📄 clinical-english.html
+├── 📄 organizational.html
+├── 📄 rehabilitation-adults.html
+├── 📄 rehabilitation-children.html
+├── 📄 neuroscience.html
+│
+├── 📁 css/
+│   └── 📄 style-sidebar.css
+│
+└── 📁 images/
+    ├── 🖼️ clinical-english-program.jpg
+    ├── 🖼️ organizational-program.jpg
+    ├── 🖼️ rehabilitation-program.jpg
+    ├── 🖼️ rehabilitation-children-program.jpg
+    └── 🖼️ neuroscience-program.jpg
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <h3>✅ רשימת בדיקה:</h3>
+                    <ul>
+                        <li>✓ יש לי 6 קבצי HTML בתיקייה הראשית</li>
+                        <li>✓ יש לי תיקיית <code>css</code> עם קובץ <code>style-sidebar.css</code> בתוכה</li>
+                        <li>✓ יש לי תיקיית <code>images</code> עם 5 תמונות בתוכה</li>
+                        <li>✓ כל שמות הקבצים זהים בדיוק לרשום למעלה</li>
+                        <li>✓ אין רווחים או תווים מיוחדים בשמות הקבצים</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- שלב 6 -->
+            <div class="step-container">
+                <div class="step-header">
+                    <h2>שלב 6️⃣: הרצת האתר!</h2>
+                    <p>עכשיו בואי נראה שהאתר עובד 🎉</p>
+                </div>
+                
+                <div class="file-instructions">
+                    <ol>
+                        <li>פתחי את התיקייה <code>psychology-website</code></li>
+                        <li>מצאי את הקובץ <code>index.html</code></li>
+                        <li>לחצי עליו <strong>כפולה</strong> (או לחצי ימנית ← Open With ← Google Chrome / Firefox)</li>
+                        <li>האתר ייפתח בדפדפן! 🎊</li>
+                    </ol>
+                </div>
+
+                <div class="success-box">
+                    <h3>✅ בדיקות שכדאי לעשות:</h3>
+                    <ul>
+                        <li><strong>התמונות מופיעות?</strong> אם כן, תיקיית images במקום הנכון ✓</li>
+                        <li><strong>העיצוב נראה טוב?</strong> אם כן, קובץ ה-CSS במקום הנכון ✓</li>
+                        <li><strong>הצבעים והפונט כמו שצריך?</strong> אם כן, העיצוב נטען בהצלחה ✓</li>
+                        <li><strong>לחצי על "המגמה הקלינית באנגלית"</strong> - הדף נפתח? ✓</li>
+                        <li><strong>לחצי על "המגמה הארגונית"</strong> - הדף נפתח? ✓</li>
+                        <li><strong>בכל דף יש תפריט צדדי עם 5 מגמות?</strong> אם כן, הניווט עובד ✓</li>
+                        <li><strong>לחצי על קישור בתפריט הצדדי</strong> - עובר בין דפים? ✓</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- פתרון בעיות -->
+            <div class="step-container">
+                <div class="step-header">
+                    <h2>🔧 פתרון בעיות נפוצות</h2>
+                    <p>אם משהו לא עובד, הנה הפתרונות</p>
+                </div>
+                
+                <div class="warning-box">
+                    <strong>❌ הבעיה: התמונות לא נטענות (מופיע סימן X)</strong>
+                    <p><strong>פתרון:</strong></p>
+                    <ul>
+                        <li>ודאי שהתיקייה נקראת <code>images</code> (באותיות קטנות)</li>
+                        <li>ודאי ששמות התמונות כוללים <code>.jpg</code> בסוף</li>
+                        <li>ודאי שהתמונות בתוך תיקיית images ולא בתיקייה אחרת</li>
+                    </ul>
+                </div>
+
+                <div class="warning-box">
+                    <strong>❌ הבעיה: העיצוב לא עובד (הכל נראה רגיל/משעמם)</strong>
+                    <p><strong>פתרון:</strong></p>
+                    <ul>
+                        <li>ודאי שיש תיקייה בשם <code>css</code> (באותיות קטנות)</li>
+                        <li>ודאי שהקובץ <code>style-sidebar.css</code> נמצא בתוך תיקיית css</li>
+                        <li>נסי לרענן את הדף (F5 או Ctrl+R)</li>
+                    </ul>
+                </div>
+
+                <div class="warning-box">
+                    <strong>❌ הבעיה: הקישורים לא עובדים (404 או "Page Not Found")</strong>
+                    <p><strong>פתרון:</strong></p>
+                    <ul>
+                        <li>ודאי שכל 6 קבצי ה-HTML נמצאים בתיקייה הראשית</li>
+                        <li>ודאי ששמות הקבצים זהים בדיוק (אותיות קטנות, עם .html)</li>
+                        <li>ודאי שאין רווחים בשמות הקבצים</li>
+                    </ul>
+                </div>
+
+                <div class="warning-box">
+                    <strong>❌ הבעיה: הפונט נראה רגיל (לא Heebo)</strong>
+                    <p><strong>פתרון:</strong></p>
+                    <ul>
+                        <li>זה תקין! הפונט Heebo נטען מהאינטרנט (Google Fonts)</li>
+                        <li>אם אין חיבור לאינטרנט, הדפדפן ישתמש בפונט חלופי</li>
+                        <li>האתר עדיין יעבוד, רק הפונט יהיה שונה</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- טיפים נוספים -->
+            <div class="tip-box">
+                <strong>💡 טיפים שימושיים:</strong>
+                <ul>
+                    <li><strong>גיבוי:</strong> גבי את כל התיקייה ל-Google Drive או USB</li>
+                    <li><strong>שיתוף:</strong> את יכולה לשלוח את כל התיקייה לחברים בזיפ (ZIP)</li>
+                    <li><strong>עריכה:</strong> את יכולה לערוך את הקבצים בכל עורך טקסט</li>
+                    <li><strong>מהירות:</strong> האתר פועל מהמחשב שלך - מהיר במיוחד!</li>
+                    <li><strong>פרטיות:</strong> האתר מקומי לחלוטין - אף אחד לא יכול לגשת אליו</li>
+                </ul>
+            </div>
+
+            <div class="success-box" style="text-align: center; margin-top: 3rem;">
+                <h2 style="font-size: 2rem; margin-bottom: 1rem;">🎉 מזל טוב!</h2>
+                <p style="font-size: 1.2rem;">
+                    יצרת בהצלחה אתר מקצועי ומלא שפועל מקומית על המחשב שלך!
+                </p>
+                <p style="margin-top: 1rem;">
+                    האתר כולל 5 מגמות לתואר שני, עיצוב מקצועי, תמונות איכותיות, 
+                    וניווט מלא בין הדפים. בהצלחה! 🚀
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
