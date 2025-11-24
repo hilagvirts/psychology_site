@@ -1,0 +1,153 @@
+/* Text-Based Style with Sidebar - Bar-Ilan Style */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+:root {
+    --primary-blue: #005596;
+    --link-blue: #0066cc;
+    --text-dark: #333;
+    --text-medium: #666;
+    --bg-white: #fff;
+    --bg-gray: #f8f8f8;
+    --bg-sidebar: #f5f5f5;
+    --border-color: #ddd;
+    --font-primary: 'Heebo', sans-serif;
+    --font-size-base: 17px;
+    --line-height-base: 1.8;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--text-dark);
+    background: var(--bg-white);
+    direction: rtl;
+}
+
+.container-full {max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;}
+
+.site-header {background: var(--bg-white); border-bottom: 1px solid var(--border-color); padding: 1rem 0;}
+.header-content {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;}
+.logo h1 {font-size: 24px; font-weight: 500; color: var(--primary-blue); margin-bottom: 0.25rem;}
+.logo .tagline {font-size: 14px; color: var(--text-medium);}
+.main-nav ul {display: flex; gap: 2rem; list-style: none;}
+.main-nav a {color: var(--text-dark); text-decoration: none; font-size: 15px; padding: 0.5rem 0; border-bottom: 2px solid transparent;}
+.main-nav a:hover, .main-nav a.active {color: var(--primary-blue); border-bottom-color: var(--primary-blue);}
+
+.page-header {background: var(--bg-gray); border-bottom: 1px solid var(--border-color); padding: 3rem 0 2rem; text-align: center;}
+.page-header h1 {font-size: 32px; font-weight: 400; color: var(--primary-blue);}
+
+.main-content {padding: 3rem 0;}
+.content-with-sidebar {display: grid; grid-template-columns: 250px 1fr; gap: 3rem; align-items: start;}
+
+.sidebar {position: sticky; top: 2rem;}
+.sidebar-nav {background: var(--bg-sidebar); border: 1px solid var(--border-color); margin-bottom: 1.5rem;}
+.sidebar-nav h3 {font-size: 16px; font-weight: 500; color: var(--primary-blue); padding: 1rem 1.25rem; border-bottom: 1px solid var(--border-color); background: var(--bg-white);}
+.sidebar-nav ul {list-style: none; padding: 0;}
+.sidebar-nav li {border-bottom: 1px solid var(--border-color);}
+.sidebar-nav li:last-child {border-bottom: none;}
+.sidebar-nav a {display: block; padding: 0.75rem 1.25rem; color: var(--text-dark); text-decoration: none; font-size: 15px; transition: all 0.2s;}
+.sidebar-nav a:hover {background: var(--bg-white); color: var(--primary-blue); padding-right: 1.5rem;}
+
+.content-main {max-width: 800px;}
+.text-section {margin-bottom: 2.5rem;}
+.text-section h2 {font-size: 24px; font-weight: 500; color: var(--primary-blue); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-color);}
+.text-section p {font-size: var(--font-size-base); line-height: var(--line-height-base); color: var(--text-dark); text-align: justify; margin-bottom: 1rem;}
+.text-section a {color: var(--link-blue); text-decoration: none; border-bottom: 1px solid transparent;}
+.text-section a:hover {border-bottom-color: var(--link-blue);}
+
+.site-footer {background: var(--bg-gray); border-top: 1px solid var(--border-color); padding: 2rem 0 1rem; margin-top: 3rem;}
+.footer-content {display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 1.5rem;}
+.footer-section h4 {font-size: 16px; font-weight: 500; color: var(--text-dark); margin-bottom: 1rem;}
+.footer-section p {font-size: 14px; color: var(--text-medium); margin-bottom: 0.25rem;}
+.footer-section a {color: var(--link-blue); text-decoration: none;}
+.footer-section a:hover {text-decoration: underline;}
+.footer-bottom {text-align: center; padding-top: 1.5rem; border-top: 1px solid var(--border-color); font-size: 14px; color: var(--text-medium);}
+
+@media (max-width: 768px) {
+    .content-with-sidebar {grid-template-columns: 1fr; gap: 2rem;}
+    .sidebar {position: static; order: -1;}
+    .header-content {flex-direction: column; text-align: center;}
+    .main-nav ul {flex-wrap: wrap; justify-content: center; gap: 1rem;}
+}
+
+/* Programs Grid with Images */
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.program-box {
+    border: 1px solid var(--border-color);
+    background: var(--bg-white);
+    transition: all 0.3s;
+}
+
+.program-box:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+}
+
+.program-box a {
+    text-decoration: none;
+    display: block;
+}
+
+.program-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.program-info {
+    padding: 1.5rem;
+    background: var(--bg-white);
+}
+
+.program-info h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.program-director {
+    font-size: 14px;
+    color: var(--text-medium);
+    margin: 0;
+}
+
+.clinical-box .program-info {
+    border-top: 3px solid #d9534f;
+}
+
+.organizational-box .program-info {
+    border-top: 3px solid #5cb85c;
+}
+
+.rehabilitation-box .program-info {
+    border-top: 3px solid #9b59b6;
+}
+
+.rehabilitation-children-box .program-info {
+    border-top: 3px solid #e74c3c;
+}
+
+.clinical-english-box .program-info {
+    border-top: 3px solid #17a2b8;
+}
+
+.neuroscience-box .program-info {
+    border-top: 3px solid #f0ad4e;
+}
+
+html {scroll-behavior: smooth;}
